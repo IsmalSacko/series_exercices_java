@@ -6,7 +6,7 @@ public class IdenntifiantEtMotDePasse {
 
 	public static void main(String[] args) {
 		/**
-		 * Déclaration des variables (identifiant et passwort) à saisir par l'utisateur au clavier
+		 * Déclaration des variables (IDENTIFIANT et PASSWORD) à saisir par l'utisateur au clavier
 		 */
 		final String IDENTIFIANT = "joelbanka@esic.fr";
 		final String PASSWORD = "JOEL";
