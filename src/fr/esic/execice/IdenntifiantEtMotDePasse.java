@@ -8,21 +8,21 @@ public class IdenntifiantEtMotDePasse {
 		/**
 		 * Déclaration des variables (identifiant et passwort) à saisir par l'utisateur au clavier
 		 */
-		String password;
-		String identifiant;
+		final String IDENTIFIANT = "joelbanka@esic.fr";
+		final String PASSWORD = "JOEL";
 		Scanner sc = new Scanner(System.in);
 		
 		// On demande à l'utilisateur de saisir l'identifiant qui affiché à l'écran (joelbanka@esic.fr)
 		System.out.println("Veuillez saisir 'joelbanka@esic.fr' comme  identifiant");
 		
 		// Affectation de la variable suite à la saisie de l'tulisateur au clavier
-		identifiant = sc.nextLine();
+		String identifiant = sc.nextLine();
 		System.out.println("--------------------------------------------");
 		// On demande à l'utilisateur de saisir le mot de passe indiqué à l'écran (JOEL)
 		System.out.println("Veuiller saisir 'JOEL' au manjuscule comme mot de passe");
 		
 		// Affectation de la variable suite à la saisie de l'tulisateur au clavier
-		password = sc.nextLine();
+		String password = sc.nextLine();
 		System.out.println("---------------------------------------------");
 	
 	/**
@@ -30,7 +30,7 @@ public class IdenntifiantEtMotDePasse {
 	 * (tant que l'identifiant et le mot de passe saisis ne sont identifiquesà
 	 * ceux indiqués, l'utilisateur contiuer à saisir jusqu'à ce qu'il y parvienne	
 	 */
-	while (!identifiant.equals("joelbanka@esic.fr") ||!password.equals("JOEL")) {
+	while (!identifiant.equals(IDENTIFIANT) ||!password.equals(PASSWORD)) {
 		System.out.println("Idetifiant ou mot de passe incorrect !");
 		System.out.println("Réessayez l'identifiant!");
 		identifiant = sc.nextLine();
